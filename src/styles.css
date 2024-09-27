@@ -1,0 +1,135 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+    grid-template-rows: repeat(2, 0.5fr) ;   
+    grid-column-gap: 5px;
+    grid-row-gap: 7px;
+
+    
+    }
+
+    
+    
+    
+    .moodBanner { grid-area: 1 / 1 / 2 / 6;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+        
+
+    }
+    .todayMood{ grid-area: 1 / 6 / 4/ 8;
+    
+    }
+
+    .trending-info-post{
+        grid-area: 2 / 1 / 4 / 6; 
+    }
+    #trending-info-card {  
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+
+    }
+
+
+
+    .Users {
+        display: grid;
+        margin-top: 5rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 5px; /* Ajusta el gap entre las filas */
+
+    }
+    
+    /* El banner rosado debe estar en la primera fila (fila 1) y ocupará las columnas 6 a 8 */
+   
+    
+    
+    /* El contenedor amarillo debe estar en la fila siguiente (fila 2) y ocupará las columnas 6 a 8 */
+    #related-users-card {
+       grid-area: 1 / 5 / 2 / 6;
+        display: flex;
+        flex-wrap: wrap;
+        width: 339px;
+        height: 100%;
+        margin-top: 30px;
+        gap: 10px;                 /* Espacio entre los elementos */
+    }
+    
+    /* Imágenes y contenido que ocupan las primeras 5 columnas */
+    .trending-img-post { 
+        grid-area: 1 / 1 / 2 / 5;
+    }
+    
+    #trending-img-card {
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 35px;
+        gap: 40px;
+    }
+  
+    
+    
+ #component-post{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+ } 
+
+ #medium-component-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ .banner-container1{
+                    background-color: rgba(252, 243, 228, 1);
+                    border-radius: 10px;
+                    align-content: center;
+                    width: 90%;
+                    justify-content: center;
+                    margin: 5px;
+                    padding: 20px;
+                     }
+ 
+ .banner1, button{
+
+    display: flex;
+    align-content: center;
+   justify-items: center;
+   color: rgba(154, 83, 17, 1);
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   background-color: transparent;
+   text-decoration: none;
+   border: transparent;
+   font-family: 'Oswald', sans-serif;
+   
+   
+
+ }
+
+ .banner1, p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+ }
+
+ .banner{
+    text-decoration: none;
+ }
